@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>محتویات کارتن شماره ۱</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5f7;
+            margin: 0;
+            padding: 30px 15px;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            background: white;
+            padding: 25px 15px;
+            border-radius: 20px;
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: #263238;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 17px;
+            margin: 0;
+        }
+
+        .count {
+            display: inline-block;
+            margin-top: 15px;
+            background: #f1f3f5;
+            color: #666;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: auto;
+        }
+
+        .item {
+            position: relative;
+            background: white;
+            margin: 28px auto;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+            text-align: center;
+        }
+
+        .number {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: #f1f3f5;
+            color: #777;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .item img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: block;
+            margin: 25px auto 15px;
+            transition: transform 0.2s ease;
+        }
+
+        .item img:hover {
+            transform: scale(1.01);
+        }
+
+        .item h2 {
+            font-size: 23px;
+            color: #263238;
+            margin: 12px 0 8px;
+        }
+
+        .item p {
+            color: #555;
+            font-size: 17px;
+            line-height: 2;
+            margin: 0 5px 5px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            margin: 35px 0 15px;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.88);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .lightbox img {
+            max-width: 95%;
+            max-height: 90vh;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .item {
+                padding: 14px;
+                margin: 20px auto;
+            }
+
+            .item h2 {
+                font-size: 20px;
+            }
+
+            .item p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>📦 محتویات کارتن شماره ۱</h1>
+
+        <p class="subtitle">
+            فهرست و تصاویر وسایل داخل کارتن
+        </p>
+
+        <span class="count">۱۷ گروه وسیله</span>
+    </header>
+
+    <main class="container">
+
+        <div class="item">
+            <span class="number">مورد ۱</span>
+            <img src="images/1.jpg" alt="کاج" onclick="openImage(this.src)">
+            <h2>کاج</h2>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۲</span>
+            <img src="images/2.jpg" alt="پوشه کار" onclick="openImage(this.src)">
+            <h2>پوشه کار</h2>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۳</span>
+            <img src="images/3.jpg" alt="کلر بوک" onclick="openImage(this.src)">
+            <h2>کلر بوک</h2>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۴</span>
+            <img src="images/4.jpg" alt="تخم مرغ سفالی" onclick="openImage(this.src)">
+            <h2>تخم مرغ سفالی</h2>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۵</span>
+            <img src="images/5.jpg" alt="انواع چسب" onclick="openImage(this.src)">
+            <h2>انواع چسب</h2>
+            <p>
+                چسب مایع (۱۰) ـ چسب چوب (۵) ـ چسب نواری (۲) ـ
+                چسب کاغذ (۱) ـ چسب ماتیکی (۶)
+            </p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۶</span>
+            <img src="images/6.jpg" alt="کاغذ A4" onclick="openImage(this.src)">
+            <h2>A4</h2>
+            <p>۵۰۰ برگ</p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۷</span>
+            <img src="images/7.jpg" alt="لوازم نقاشی و نوشت افزار" onclick="openImage(this.src)">
+            <h2>لوازم نقاشی و نوشت‌افزار</h2>
+            <p>
+                مدادرنگی ـ قیچی ـ زغال ـ مداد مشکی و قرمز ـ پاک‌کن ـ تراش ـ
+                ماژیک ۳ رنگ ـ قلم‌مو سرگرد
+            </p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۸</span>
+            <img src="images/8.jpg" alt="روزنامه باطله" onclick="openImage(this.src)">
+            <h2>روزنامه باطله</h2>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۹</span>
+            <img src="images/9.jpg" alt="دفترها" onclick="openImage(this.src)">
+            <h2>دفتر</h2>
+            <p>دفتر شطرنجی ـ دفتر نقاشی</p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۱۰</span>
+            <img src="images/10.jpg" alt="وسایل تزئینی و کاردستی" onclick="openImage(this.src)">
+            <h2>وسایل تزئینی و کاردستی</h2>
+            <p>
+                اکلیل ۶ رنگ ـ پولک ۳ رنگ ـ چشم متحرک کوچک و بزرگ ـ سرنگ ـ
+                خلال دندان ـ تسبیح ـ مروارید ـ بند کفش ـ دکمه‌های کوچک و بزرگ
+            </p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۱۱</span>
+            <img src="images/11.jpg" alt="چوب بستنی" onclick="openImage(this.src)">
+            <h2>چوب بستنی</h2>
+            <p>۳ سایز</p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۱۲</span>
+            <img src="images/12.jpg" alt="روبان" onclick="openImage(this.src)">
+            <h2>روبان</h2>
+            <p>۴ رنگ</p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۱۳</span>
+            <img src="images/13.jpg" alt="گوش پاک کن و شمع" onclick="openImage(this.src)">
+            <h2>گوش پاک‌کن و شمع</h2>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۱۴</span>
+            <img src="images/14.jpg" alt="فوم اکلیلی" onclick="openImage(this.src)">
+            <h2>فوم اکلیلی</h2>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۱۵</span>
+            <img src="images/15.jpg" alt="نمد" onclick="openImage(this.src)">
+            <h2>نمد</h2>
+            <p>۳ رنگ</p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۱۶</span>
+            <img src="images/16.jpg" alt="شابلون و کاموا" onclick="openImage(this.src)">
+            <h2>شابلون و کاموا</h2>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۱۷</span>
+            <img src="images/17.jpg" alt="جعبه دارو و سر قوطی رب" onclick="openImage(this.src)">
+            <h2>جعبه دارو و سر قوطی رب</h2>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        فهرست و تصاویر وسایل داخل کارتن
+    </footer>
+
+    <div class="lightbox" id="lightbox" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img id="lightboxImage" src="" alt="تصویر بزرگ">
+    </div>
+
+    <script>
+        function openImage(src) {
+            document.getElementById("lightboxImage").src = src;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
