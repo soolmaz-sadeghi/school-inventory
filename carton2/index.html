@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>محتویات کارتن شماره ۲</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5f7;
+            margin: 0;
+            padding: 30px 15px;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            background: white;
+            padding: 25px 15px;
+            border-radius: 20px;
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: #263238;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 17px;
+            margin: 0;
+        }
+
+        .count {
+            display: inline-block;
+            margin-top: 15px;
+            background: #f1f3f5;
+            color: #666;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: auto;
+        }
+
+        .item {
+            position: relative;
+            background: white;
+            margin: 28px auto;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+            text-align: center;
+        }
+
+        .number {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: #f1f3f5;
+            color: #777;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .item img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: block;
+            margin: 25px auto 15px;
+            transition: transform 0.2s ease;
+        }
+
+        .item img:hover {
+            transform: scale(1.01);
+        }
+
+        .item h2 {
+            font-size: 23px;
+            color: #263238;
+            margin: 12px 0 8px;
+        }
+
+        .item p {
+            color: #555;
+            font-size: 17px;
+            line-height: 2;
+            margin: 0 5px 5px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            margin: 35px 0 15px;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.88);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .lightbox img {
+            max-width: 95%;
+            max-height: 90vh;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .item {
+                padding: 14px;
+                margin: 20px auto;
+            }
+
+            .item h2 {
+                font-size: 20px;
+            }
+
+            .item p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>📦 محتویات کارتن شماره ۲</h1>
+
+        <p class="subtitle">
+            فهرست و تصاویر وسایل داخل کارتن
+        </p>
+
+        <span class="count">۸ گروه وسیله</span>
+    </header>
+
+    <main class="container">
+
+        <div class="item">
+            <span class="number">مورد ۱</span>
+            <img src="1.jpg" alt="بادکنک" onclick="openImage(this.src)">
+            <h2>بادکنک</h2>
+            <p>۲۰ عدد</p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۲</span>
+            <img src="2.jpg" alt="لوازم هنری" onclick="openImage(this.src)">
+            <h2>لوازم هنری</h2>
+            <p>
+                اسلایم ـ خمیر بازی ـ آبرنگ ـ گواش ـ رنگ انگشتی ـ گل رس
+            </p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۳</span>
+            <img src="3.jpg" alt="پم پم و پنبه" onclick="openImage(this.src)">
+            <h2>پم پم و پنبه</h2>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۴</span>
+            <img src="4.jpg" alt="ظروف یک بار مصرف" onclick="openImage(this.src)">
+            <h2>ظروف یک‌بار مصرف</h2>
+            <p>
+                بشقاب تلقی ـ قاشق یک‌بار مصرف ـ لیوان کاغذی یک‌بار مصرف
+            </p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۵</span>
+            <img src="5.jpg" alt="مواد خوراکی و حبوبات" onclick="openImage(this.src)">
+            <h2>مواد خوراکی و حبوبات</h2>
+            <p>
+                حبوبات (لپه ـ نخود ـ لوبیا) ـ نمک ـ ماکارونی ـ
+                ۲ بسته ژله ـ آرد ـ رنده کوچک
+            </p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۶</span>
+            <img src="6.jpg" alt="خرده پارچه" onclick="openImage(this.src)">
+            <h2>خرده پارچه</h2>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۷</span>
+            <img src="7.jpg" alt="وسایل بهداشتی" onclick="openImage(this.src)">
+            <h2>وسایل بهداشتی</h2>
+            <p>
+                مسواک ـ خمیردندان ـ دستمال سفره
+            </p>
+        </div>
+
+        <div class="item">
+            <span class="number">مورد ۸</span>
+            <img src="8.jpg" alt="نی و پلاستیک" onclick="openImage(this.src)">
+            <h2>نی و پلاستیک</h2>
+            <p>
+                نی ـ پلاستیک فریزر ـ رنده کوچک
+            </p>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        فهرست و تصاویر وسایل داخل کارتن
+    </footer>
+
+    <div class="lightbox" id="lightbox" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img id="lightboxImage" src="" alt="تصویر بزرگ">
+    </div>
+
+    <script>
+        function openImage(src) {
+            document.getElementById("lightboxImage").src = src;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
